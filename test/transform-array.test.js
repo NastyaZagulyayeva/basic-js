@@ -93,6 +93,17 @@ describe('Transform array', () => {
             for(let i = 0; i < 50; i += 1) {
                 const { input, output } = createSample(i);
                 assert.deepStrictEqual(transform(input), output);
+                // try {
+                //     assert.deepStrictEqual(transform(input), output);
+                // } catch(e) {
+                //     console.log("-----------------------INPUT");
+                //     console.log(JSON.stringify(input, null, 2));
+                //     console.log("-----------------------TRANSFORN");
+                //     console.log(JSON.stringify(transform(input), null, 2));
+                //     console.log("-----------------------OUTPUT");
+                //     console.log(JSON.stringify(output, null, 2));
+                // }
+                
             }   
         });
 

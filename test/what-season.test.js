@@ -267,7 +267,7 @@ describe('What season', () => {
             Object.setPrototypeOf(deeperFakeDate, Object.getPrototypeOf(new Date()));
 
             try {
-                getSeason(deeperFakeDate)
+                console.log(getSeason(deeperFakeDate))
             } catch(err) {
                 if (err._validationProp === 'NA') {
                     this.skip();
